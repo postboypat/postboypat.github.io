@@ -3,10 +3,10 @@
   <channel>
     <title>Memoirs</title>
     <description>This is the template!! I will take you on the fabulous world of exploration. Travel, culture, lifestyle. Eat, Pray, Love!</description>
-    <link>/jekyll-theme-memoirs/</link>
-    <atom:link href="/jekyll-theme-memoirs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Dec 2020 20:56:21 +0100</pubDate>
-    <lastBuildDate>Sat, 05 Dec 2020 20:56:21 +0100</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 05 Dec 2020 21:00:08 +0100</pubDate>
+    <lastBuildDate>Sat, 05 Dec 2020 21:00:08 +0100</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -26,8 +26,8 @@
 &lt;p&gt;In 2017 Hache opened a smaller restaurant, L’Écrin, within the renovated hotel; the former space of Les Ambassadeurs became a bar.&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Feb 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/les-ambassadeurs/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/les-ambassadeurs/</guid>
+        <link>/les-ambassadeurs/</link>
+        <guid isPermaLink="true">/les-ambassadeurs/</guid>
         
         <category>France</category>
         
@@ -47,8 +47,8 @@
 &lt;p&gt;For several hundred thousand years, the Sahara has alternated between desert and savanna grassland in a 20,000 year cycle caused by the precession of the Earth’s axis as it rotates around the Sun, which changes the location of the North African Monsoon. The area is next expected to become green in about 15,000 years (17,000 AD).&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Feb 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/much-more-than-a-desert-trip-to-sahara/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/much-more-than-a-desert-trip-to-sahara/</guid>
+        <link>/much-more-than-a-desert-trip-to-sahara/</link>
+        <guid isPermaLink="true">/much-more-than-a-desert-trip-to-sahara/</guid>
         
         
         <category>Travel</category>
@@ -72,8 +72,8 @@
 &lt;p&gt;An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jan 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/one-day-just-started-adventure/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/one-day-just-started-adventure/</guid>
+        <link>/one-day-just-started-adventure/</link>
+        <guid isPermaLink="true">/one-day-just-started-adventure/</guid>
         
         
         <category>Travel</category>
@@ -97,8 +97,8 @@
 &lt;p&gt;Until 1959, the sentries at Buckingham Palace were stationed outside the fence. This stopped following an incident involving a female tourist and a Coldstream Guardsman – due to the continued pestering by tourists and sightseers, the guardsman kicked the tourist on the ankle as he marched. The tourist made a complaint to the police and the sentry was confined to barracks for ten days. Not long after, the sentries were moved inside the fence.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jan 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/london/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/london/</guid>
+        <link>/london/</link>
+        <guid isPermaLink="true">/london/</guid>
         
         
         <category>Travel</category>
@@ -125,8 +125,8 @@
 
 </description>
         <pubDate>Sun, 12 Jan 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/external-featured-image/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/external-featured-image/</guid>
+        <link>/external-featured-image/</link>
+        <guid isPermaLink="true">/external-featured-image/</guid>
         
         <category>France</category>
         
@@ -161,8 +161,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Sat, 11 Jan 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/post-with-spoiler</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/post-with-spoiler</guid>
+        <link>/post-with-spoiler</link>
+        <guid isPermaLink="true">/post-with-spoiler</guid>
         
         <category>Movies</category>
         
@@ -186,8 +186,8 @@
 &lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jan 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/that-day-we-almost-missed-flight/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/that-day-we-almost-missed-flight/</guid>
+        <link>/that-day-we-almost-missed-flight/</link>
+        <guid isPermaLink="true">/that-day-we-almost-missed-flight/</guid>
         
         
         <category>Travel</category>
@@ -217,8 +217,8 @@ rating: 4.5
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Wed, 01 Jan 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/review-oscar/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/review-oscar/</guid>
+        <link>/review-oscar/</link>
+        <guid isPermaLink="true">/review-oscar/</guid>
         
         <category>Movies</category>
         
@@ -244,8 +244,8 @@ rating: 4.5
 &lt;p&gt;Although some producers have benefited in recent years from rising prices and increased demand for some of the prestige wines from Burgundy and Bordeaux, the French wine industry has seen a decline in domestic consumption and internationally, it has had to compete with many new world wines.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jan 2020 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/french-wine/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/french-wine/</guid>
+        <link>/french-wine/</link>
+        <guid isPermaLink="true">/french-wine/</guid>
         
         <category>France</category>
         
@@ -269,8 +269,8 @@ rating: 4.5
 &lt;p&gt;The Gallery often presents temporary special exhibitions spanning the world and the history of art. It is one of the largest museums in North America.&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Dec 2019 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/the-observer/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/the-observer/</guid>
+        <link>/the-observer/</link>
+        <guid isPermaLink="true">/the-observer/</guid>
         
         
         <category>Lifestyle</category>
