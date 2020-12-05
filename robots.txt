@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/jekyll-theme-memoirs/sitemap.xml
+Sitemap: /jekyll-theme-memoirs/sitemap.xml
