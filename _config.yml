@@ -5,12 +5,9 @@ description: "Motion designer based in Bonn, Germany."
 logo: 'assets/images/PG-logo2.png'
 favicon: '/assets/images/favicon.ico'
 baseurl: ''
-google_analytics: 'UA-xxxxxxxx-1'
-disqus: 'demowebsite'
-mailchimp-list:
 include: ["_pages"]
 permalink: /:title/
-email: postboypat@gmail.com
+email: mrpatrickgerman@gmail.com
 instagram: "https://instagram.com/patrick_german_"
 
 # Collections

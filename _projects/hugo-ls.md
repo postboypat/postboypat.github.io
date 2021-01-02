@@ -3,7 +3,7 @@ layout: project
 title:  "Hugo Language Services"
 author: sal
 categories: [ Motion Design, Branding ]
-image: assets/images/hls/hls_thumb.jpg
+image: assets/images/hls/hls_thumb1.jpg
 no_feature_image: true
 weight: 1
 color1: 20336d
