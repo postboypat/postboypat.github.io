@@ -2,10 +2,25 @@
 layout: default
 title: Home
 ---
+<p class="sitetag-large" style="font-weight:900;">
+  Patrick German
+</p>
+<p class="sitetag">
+  Motion designer based in Bonn, Germany.
+</p>
+
+<!-- Projects index
+================================================== -->
+<div class="project-grid-container">
+  {% assign projects = site.projects | sort: 'weight' %}
+  {% for project in projects %}
+       {% include projectbox.html %}
+  {% endfor %}
+</div>
 
 <!-- Posts Index
 ================================================== -->
-<div class="blog-grid-container">
+<div class="blog-grid-container d-none">
     {% for post in paginator.posts %}
         {% include postbox.html %}
     {% endfor %}
@@ -13,9 +28,8 @@ title: Home
 
 <!-- Pagination
 ================================================== -->
-<div class="bottompagination">
+<div class="bottompagination d-none">
 <span class="navigation" role="navigation">
     {% include pagination.html %}
 </span>
 </div>
-

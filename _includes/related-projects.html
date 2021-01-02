@@ -1,0 +1,39 @@
+<!-- Related Posts
+================================================== -->
+<div class="{% unless page.categories == empty %} related-posts {% endunless %}">
+
+    {% unless page.categories == empty %}
+    <h2 class="text-center mb-4">More projects like this</h2>
+    {% endunless %}
+
+    {% assign maxRelated = 2 %}
+    {% assign minCommonTags =  1 %}
+    {% assign maxRelatedCounter = 0 %}
+    <div class="project-grid-container">
+      {% assign projects = site.projects | sample %}
+        {% for project in site.projects %}
+
+            {% assign sameTagCount = 0 %}
+            {% assign commonTags = '' %}
+
+            {% for category in project.categories %}
+            {% if project.url != page.url %}
+                {% if page.categories contains category %}
+                {% assign sameTagCount = sameTagCount | plus: 1 %}
+                {% capture tagmarkup %} {{ category }} {% endcapture %}
+                {% assign commonTags = commonTags | append: tagmarkup %}
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+
+            {% if sameTagCount >= minCommonTags %}
+            {% include projectbox.html %}
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+            {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+            {% endif %}
+            {% endif %}
+
+        {% endfor %}
+        </div>
+</div>

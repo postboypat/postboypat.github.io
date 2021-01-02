@@ -1,0 +1,91 @@
+---
+layout: default
+disqus: false
+archive: false
+post_class: post-template
+---
+
+{% if page.color1 %}
+  <style>
+    .sidebar {
+      background: #{{ page.color1 }};
+      background: -moz-linear-gradient(180deg, #{{ page.color1 }} 0%, #{{ page.color2 }} 100%);
+      background: -webkit-linear-gradient(180deg, #{{ page.color1 }} 0%, #{{ page.color2 }} 100%);
+      background: linear-gradient(180deg, #{{ page.color1 }} 0%, #{{ page.color2 }} 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{{ page.color1 }}",endColorstr="#{{ page.color2 }}",GradientType=1);
+    }
+    #menu {
+      background: #{{ page.color1 }};
+      background: -moz-linear-gradient(180deg, #{{ page.color1 }} 0%, #{{ page.color2 }} 100%);
+      background: -webkit-linear-gradient(180deg, #{{ page.color1 }} 0%, #{{ page.color2 }} 100%);
+      background: linear-gradient(180deg, #{{ page.color1 }} 0%, #{{ page.color2 }} 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{{ page.color1 }}",endColorstr="#{{ page.color2 }}",GradientType=1);
+    }
+    a {
+      color: #{{ page.color1 }}
+    }
+    a:hover {
+      color: #{{page. color2 }}
+    }
+
+  </style>
+{% endif %}
+
+<div class="entry-header">
+    <!-- Project Category -->
+    <p class="project-categories">{{ page.categories | join: "  •  " }}</p>
+    <!-- Post Title -->
+    <h1 class="posttitle">{{ page.title }}</h1>
+</div>
+
+
+
+<!-- Featured Image -->
+{% include featured-image.html %}
+
+
+<!-- Content -->
+{% include article.html %}
+
+<!-- Rating -->
+{% if page.rating %}
+<div class="rating mt-4 mb-4 d-flex align-items-center">
+    <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+</div>
+{% endif %}
+
+
+
+
+
+<!-- Share -->
+{% include share.html %}
+
+<!-- Related Post -->
+{% include related-projects.html %}
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first:
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+{% if page.rating %}
+    <script type="application/ld+json">
+    {
+    "@context": "http://schema.org/",
+    "@type": "Review",
+    "itemReviewed": {
+    "@type": "Thing",
+    "name": "{{ page.title }}"
+    },
+    "author": {
+    "@type": "Person",
+    "name": "{{ author.display_name }}"
+    },
+    "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
+    "bestRating": "5"
+    }
+    }
+    </script>
+{% endif %}

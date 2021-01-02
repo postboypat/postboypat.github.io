@@ -1,0 +1,48 @@
+<!-- Experiment Item -->
+
+<div class="experiment-grid-item">
+  <div class="card" data-toggle="modal" data-target="#exampleModal-{{ forloop.index }}">
+      <div class="maxthumb">
+                  {% if site.lazyimages == "enabled" %}
+                      <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if project.image contains "://" %}{{ experiment.image }}{% else %}{{ site.baseurl }}/{{ experiment.image }}{% endif %}" alt="{{ experiment.name }}">
+                  {% else %}
+                      <img class="img-thumb" src="{% if experiment.image contains "://" %}{{ experiment.image }}{% else %}{{ site.baseurl }}/{{ experiment.image }}{% endif %}" alt="{{ experiment.name }}">
+                  {% endif %}
+      </div>
+      <div class="card-img-overlay">
+        <div class="card--content">
+        <h5 class="card-title">{{ experiment.name }}</h5>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Experiment Modal -->
+<div class="modal fade" id="exampleModal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <button type="button" class="close" style="color:white; opacity:1; position:absolute; top:12px; right:20px; font-size: 40px;" data-dismiss="modal" aria-label="Close" style="position:absolute; top:40px; right:20px;">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-dialog modal-dialog-centered {% if experiment.ratio == '16by9' %} modal-lg {% endif %}" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        {% if experiment.embedsrc contains "youtube" %}
+          <div class="embed-responsive embed-responsive-{{ experiment.ratio }}">
+            <iframe class="embed-responsive-item" width="560" height="315" src="{{ experiment.embedsrc }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        {% elsif experiment.embedsrc contains "vimeo" %}
+          <div class="embed-responsive embed-responsive-{{ experiment.ratio }}">
+            <iframe class="embed-responsive-item" src="{{ experiment.embedsrc }}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        {% elsif experiment.embedsrc contains "instagram" %}
+            <div class="embed-responsive embed-responsive-{{ experiment.ratio }}">
+              <iframe class="embed-responsive-item" src="{{ experiment.embedsrc }}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        {% else %}
+          <img src="/{{ experiment.image }}" />
+        {% endif %}
+
+
+      </div>
+    </div>
+  </div>
+</div>
