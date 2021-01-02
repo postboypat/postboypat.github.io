@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Hugo Language Services"
+title:  "Language Consultation Service"
 author: sal
 categories: [ Motion Design, Branding ]
 image: assets/images/hls/hls_thumb1.jpg
