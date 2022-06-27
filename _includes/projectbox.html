@@ -1,7 +1,7 @@
 <!-- begin project -->
 
 
-<div class="project-grid-item">
+<div class="project-grid-item {% for cat in project.categories %}iso-{{ cat | remove:" " | downcase }} {% endfor %}">
     <div class="card">
         <div class="maxthumb">
                 {% if project.videothumb %}

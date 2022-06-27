@@ -197,3 +197,10 @@ $(document).ready(function(){
       });
   });
 });
+
+
+// Replace thumbnail with video on thumbnail click
+$('.thumbnail-video').click(function(){
+           var video = '<div id="thumbnail-video-video" class="embed-responsive embed-responsive-16by9"><iframe src="'+ $(this).attr('data-video') +'" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>';
+         $(this).replaceWith(video);
+});

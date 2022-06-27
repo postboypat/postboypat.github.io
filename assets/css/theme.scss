@@ -16,15 +16,6 @@ $enable-rounded: false;
 @import 'stars';
 
 
-@font-face {
-    font-family: 'Lot';
-    src: url('{{ site.baseurl }}/assets/fonts/Lot-Regular.eot'); /* IE9 Compat Modes */
-    src: url('{{ site.baseurl }}/assets/fonts/Lot-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('{{ site.baseurl }}/assets/fonts/Lot-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('{{ site.baseurl }}/assets/fonts/Lot-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-}
-
-
 
 // general
 body, input, button, select, optgroup, textarea {
@@ -35,7 +26,10 @@ body {
     background: #f4f4f4;
 }
 a {
-    color: darken($primary, 24%);
+    color: #4485bc;
+}
+a:hover {
+  color: #4485bc;
 }
 img {
     max-width:100%;
@@ -44,6 +38,7 @@ img {
 
 h1,h2,h3,h4,h5,h6 {
     font-weight:700;
+    font-family: campaign, sans-serif;
 }
 .site-content {
     padding-top:50px;
@@ -51,9 +46,9 @@ h1,h2,h3,h4,h5,h6 {
 .sitetag {
     font-weight:300;
     line-height:1.3;
-    font-size:35px;
+    font-size:30px;
     @include media-breakpoint-up(sm) {
-        font-size:35px;
+        font-size:30px;
         line-height:1.2;
     }
 }
@@ -71,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
     min-width: 180px;
 }
 blockquote {
-    font-family: Times New Roman;
+    font-family: campaign, sans-serif;
     font-style: italic;
     font-size: 20px;
     position:relative;
@@ -158,7 +153,7 @@ img, img:hover {
     border-radius: 30px;
     z-index: 1026;
     font-size: 1.5vw;
-    font-family: 'Lot';
+    font-family: campaign, sans-serif;
     color:white;
     text-decoration: none;
 }
@@ -170,20 +165,20 @@ img, img:hover {
     border-radius: 30px;
     z-index: 1026;
     font-size: 31px;
-    font-family: 'Lot';
+    font-family: campaign, sans-serif;
     color:white;
     text-decoration: none;
 }
 
 .nav-animated-icon {
     position: fixed;
-    left: 15px;
-    top: 15px;
+    left: 25px;
+    top: 30px;
     cursor: pointer;
     border-radius: 30px;
     z-index: 1026;
     font-size: 31px;
-    font-family: 'Lot';
+    font-family: campaign, sans-serif;
     color:white;
     text-decoration: none;
 }
@@ -822,7 +817,7 @@ img, img:hover {
         line-height: 1;
         padding: 2px 3px;
         width: 150px;
-        font-family: Arial;
+        font-family: campaign, sans-serif;
         text-align: center;
         border-radius: 3px;
         transition: all .4s;
@@ -944,7 +939,7 @@ body.active-side {
 /* NEW STYLES */
 .pg-logo-text {
   font-size: 4.5vw;
-  font-family: 'Lot';
+  font-family: campaign, sans-serif;
 }
 .utility-bar {
     position: relative;
@@ -961,6 +956,15 @@ text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
 }
+
+.thumbnail-video {
+  cursor: pointer;
+}
+
+.thumbnail-video:hover {
+  box-shadow:0px 0px 16px black;
+}
+
 
 //responsive tweaks
 @media (min-width: 768px) {
@@ -1057,7 +1061,7 @@ text-transform: uppercase;
     }
     .nav-animated-icon {
       position:absolute;
-      top: 15px;
+      top: 25px;
       left:20px;
     }
     .nav-pg-fa-icon {

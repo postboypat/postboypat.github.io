@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Motion Designer based in Bonn, Germany
+title: Get in touch!
 permalink: /about/
 comments: false
 image: assets/images/1.jpg
@@ -8,9 +8,8 @@ imageshadow: true
 no_feature_image: true
 ---
 
-Hey there, Patrick here!
 
-I'm British, but currently live in Bonn, Germany.
+
 
 Thanks for stopping by to view my work, and hope you saw something you liked.
 
@@ -25,6 +24,8 @@ Thanks for stopping by to view my work, and hope you saw something you liked.
 <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address*" required>
 </div>
 </div>
-<textarea rows="8" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>    
+<textarea rows="12" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>    
 <input class="btn btn-dark" type="submit" value="Send">
 </form>
+
+<br><br><br><br>
