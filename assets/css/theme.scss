@@ -1062,7 +1062,7 @@ text-transform: uppercase;
     .nav-animated-icon {
       position:absolute;
       top: 25px;
-      left:20px;
+      left:35px;
     }
     .nav-pg-fa-icon {
       position:absolute;
@@ -1072,6 +1072,12 @@ text-transform: uppercase;
       position:absolute;
       right: 45px;
       top:15px;
+      left:auto;
+    }
+    .nav-icon-plane {
+      position:absolute;
+      right: 95px;
+      top:20px;
       left:auto;
     }
     .nav-icon {
