@@ -944,10 +944,14 @@ body.active-side {
 .utility-bar {
     position: relative;
     width: 100%;
-    left: 80px;
     background-color: white;
     padding: 24px 30px;
 }
+
+.utility-bar .ub-content {
+  padding-left: 80px;
+}
+
 .utility-bar a {
   color: #212529;
 }
@@ -965,7 +969,11 @@ text-transform: uppercase;
   box-shadow:0px 0px 16px black;
 }
 
+//CTA-1
+.cta-white {
+    font-size: 20px;
 
+}
 //responsive tweaks
 @media (min-width: 768px) {
     .container, .container-sm, .container-md, .container-lg {
@@ -1055,6 +1063,9 @@ text-transform: uppercase;
     .utility-bar {
       left:0px;
       margin-bottom:40px
+    }
+    .utility-bar .ub-content {
+      padding-left: 0px;
     }
     .sidebar, .share, .wrap-search {
         position:relative;

@@ -61,7 +61,7 @@
         <h3>Patrick German</h3>
         <li><a href="{{ site.baseurl }}/">Work</a></li>
 				<!--<li><a href="{{ site.baseurl }}/projects/experiments">Experiments</a></li>-->
-        <li><a href="{{ site.baseurl }}/about">Contact</a></li>
+        <li><a href="{{ site.baseurl }}/info">Info</a></li>
     </ul>
 </nav>
 <div class="nav-icon-instagram">
@@ -77,12 +77,16 @@
 
 {% if page.layout == 'project' %}
   <div class="utility-bar">
-    <a href="/"><i class="fas fa-arrow-left" style="margin-right:10px; font-size: 13px;"></i> Back to Projects</a>
+		<div class="ub-content">
+    	<a href="/"><i class="fas fa-arrow-left" style="margin-right:10px; font-size: 13px;"></i> Back to Projects</a>
+		</div>
   </div>
 {% endif %}
 {% if page.layout == 'page' %}
   <div class="utility-bar">
-    <a href="/"><i class="fas fa-arrow-left" style="margin-right:10px; font-size: 13px;"></i> Back Home</a>
+		<div class="ub-content">
+    	<a href="/"><i class="fas fa-arrow-left" style="margin-right:10px; font-size: 13px;"></i> Back Home</a>
+		</div>
   </div>
 {% endif %}
 
