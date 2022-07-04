@@ -1,7 +1,6 @@
 ---
 layout: project
 title:  "Language Consultation Service"
-author: sal
 categories: [ Motion Design, Branding ]
 image: assets/images/hls/hls_thumb1.jpg
 no_feature_image: true
