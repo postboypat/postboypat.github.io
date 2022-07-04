@@ -1041,6 +1041,9 @@ text-transform: uppercase;
     .project-grid-container {
         grid-template-columns: 1fr;
     }
+    .project-grid-container-3 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
     .project-grid-item:nth-child(even) {
       top: 0px!important;
     }
