@@ -540,6 +540,10 @@ img, img:hover {
     }
 }
 
+.maxthumb {
+  position:absolute;
+}
+
 .firstpage {
     .project-grid-item:nth-child(even) {
       top: 00px;
@@ -1042,7 +1046,7 @@ text-transform: uppercase;
         grid-template-columns: 1fr;
     }
     .project-grid-container-3 {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
     }
     .project-grid-item:nth-child(even) {
       top: 0px!important;
