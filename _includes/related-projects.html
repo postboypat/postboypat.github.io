@@ -6,10 +6,10 @@
     <h2 class="text-center mb-4">More projects like this</h2>
     {% endunless %}
 
-    {% assign maxRelated = 2 %}
+    {% assign maxRelated = 3 %}
     {% assign minCommonTags =  1 %}
     {% assign maxRelatedCounter = 0 %}
-    <div class="project-grid-container">
+    <div class="project-grid-container-3">
       {% assign projects = site.projects | sample %}
         {% for project in site.projects %}
 
