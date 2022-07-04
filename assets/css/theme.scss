@@ -22,7 +22,6 @@ body, input, button, select, optgroup, textarea {
     font-family:Lato;
 }
 body {
-    line-height:1.7;
     background: #f4f4f4;
 }
 a {
@@ -35,7 +34,9 @@ img {
     max-width:100%;
     height:auto;
 }
-
+p {
+  line-height:1.7;
+}
 h1,h2,h3,h4,h5,h6 {
     font-weight:700;
     font-family: campaign, sans-serif;
