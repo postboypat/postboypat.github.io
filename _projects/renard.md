@@ -4,7 +4,7 @@ title:  "Renard Toys and Crafts"
 categories: [ Branding ]
 image: assets/images/renard/renard_logo.jpg
 no_feature_image: false
-weight: 5
+weight: 6
 color1: f18831
 color2: b5611b
 imageshadow: true
