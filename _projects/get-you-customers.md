@@ -2,9 +2,9 @@
 layout: project
 title:  "Get You Customers"
 categories: [ Motion Design ]
-image: assets/images/hls/hls_thumb1.jpg
+image: assets/images/gyc/gyc.jpg
 no_feature_image: true
-weight: 1
+weight: 3
 color1: f39536
 color2: f4662a
 imageshadow: true
