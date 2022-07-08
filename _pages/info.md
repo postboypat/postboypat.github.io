@@ -17,7 +17,7 @@ no_feature_image: true
   </div>
   <div class="col-md-9">
     <p>
-    <strong>I'm Patrick German. A husband. A father. And a motion graphic designer.</strong>
+    <strong>I'm Patrick German. A husband. A father. And a 2d motion graphic designer.</strong>
     </p>
     <p>
       Despite the name, I'm actually British, but curiously, have found myself living and working in Bonn, Germany. Fate, perhaps? Who knows...Regardless, I consider myself a global citizen, and love connecting with different people from all over the world.
