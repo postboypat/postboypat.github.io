@@ -12,9 +12,6 @@ no_feature_image: true
 
 <h1>Hey there! 👋</h1>
 <div class="row d-flex align-items-center mb-0">
-  <div class="col-md-3">
-    <img style="border-radius: 50%; width:200px; max-width: 100%; text-align:center;" src="/assets/images/about/pg_profile.jpg" />
-  </div>
   <div class="col-md-9">
     <p>
     <strong>I'm Patrick German. A husband. A father. And a 2d motion graphic designer.</strong>
@@ -22,6 +19,9 @@ no_feature_image: true
     <p>
       Despite the name, I'm actually British, but curiously, have found myself living and working in Bonn, Germany. Fate, perhaps? Who knows...Regardless, I consider myself a global citizen, and love connecting with different people from all over the world.
     </p>
+  </div>
+  <div class="col-md-3">
+    <img style="border-radius: 50%; width:200px; max-width: 100%; text-align:center;" src="/assets/images/about/pg_profile.jpg" />
   </div>
 </div>
 <p class="mt-0">
