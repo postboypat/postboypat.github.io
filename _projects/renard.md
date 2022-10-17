@@ -16,7 +16,7 @@ imageshadow: true
 
 <h2>Lottie Animations</h2>
 
-Hover over the fox with your mouse cursor ;)
+Hover over the fox, or tap it if you're on your phone ;)
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
