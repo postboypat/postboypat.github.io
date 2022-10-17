@@ -14,6 +14,26 @@ imageshadow: true
 
 *Renard* is the French word for *fox*, and so they wished to incorporate a fox character into the new logo design. The result is a playful collection of shapes, representing wooden blocks surrounding the main logo, the fox and a treated wordmark incorporating a fox tail.
 
-You can purchase the 'Les Cordeliers Wooden Toy Farm set' <a href="https://www.etsy.com/uk/listing/1238356362/hand-made-wooden-toy-farm?click_key=372a3d6e06ab9fa8fad988e15f28482a43b2b64d%3A1238356362&click_sum=97189776&ref=hp_rv-1&frs=1" target="_blank">here</a>.
+<h2>Lottie Animations</h2>
+
+Hover over the fox with your mouse cursor ;)
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+<lottie-player id="renardlottie" src="/assets/images/renard/renard.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin:auto;"></lottie-player>
+
+<script>
+LottieInteractivity.create({
+    player:'#renardlottie',
+    mode:"cursor",
+    actions: [
+        {
+            type: "hover",
+            forceFlag: false
+        }
+    ]
+});
+</script>
 
 *Software Used: Illustrator*

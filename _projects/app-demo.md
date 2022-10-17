@@ -27,13 +27,13 @@ This app demonstration video was a personal project aimed at improving my use of
 <div class="my-5 extended">
     <div class="row">
       <div class="col-md-6 mb-4">
-        <img class="featured-image image-shadow" src="{{ site.baseurl }}/assets/images/app-demo/app-demo-inner2.jpg" alt="Design Variations - App Demonstration Video">
+        <img class="featured-image image-shadow" src="{{ site.baseurl }}/assets/images/app-demo/app-demo-inner2.jpg" alt="Style Frames - App Demonstration Video">
       </div>
       <div class="col-md-6 mb-4">
-        <img class="featured-image image-shadow" src="{{ site.baseurl }}/assets/images/app-demo/app-demo-inner3.jpg" alt="Design Variations - App Demonstration Video">
+        <img class="featured-image image-shadow" src="{{ site.baseurl }}/assets/images/app-demo/app-demo-inner3.jpg" alt="Style Frames - App Demonstration Video">
       </div>
       <div class="col-12 mt-4">
-        <img class="featured-image image-shadow" src="{{ site.baseurl }}/assets/images/app-demo/app-demo-inner1.jpg" alt="Design Variations - App Demonstration Video">
+        <img class="featured-image image-shadow" src="{{ site.baseurl }}/assets/images/app-demo/app-demo-inner1.jpg" alt="Style Frames - App Demonstration Video">
       </div>
     </div>
 </div>
