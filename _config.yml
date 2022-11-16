@@ -9,6 +9,7 @@ include: ["_pages"]
 permalink: /:title/
 email: mrpatrickgerman@gmail.com
 instagram: "https://instagram.com/patrick_german_"
+linkedin: "https://www.linkedin.com/in/patrick-german-6b7b64b1/"
 
 # Collections
 collections:

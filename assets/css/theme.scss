@@ -88,7 +88,6 @@ blockquote {
 .hamburger-bar:before,
 .hamburger-bar:after,
 #menu,
-body,
 a,
 a:hover,
 body.active-side,
@@ -196,6 +195,19 @@ img, img:hover {
       color:white;
       font-size: 28px;
     }
+}
+.nav-icon-linkedin {
+        position: fixed;
+        left: 27px;
+        bottom: 135px;
+        cursor: pointer;
+        border-radius: 30px;
+        z-index: 1026;
+        text-decoration: none;
+        a {
+          color:white;
+          font-size: 28px;
+        }
 }
 .nav-icon-plane {
     position: fixed;
@@ -909,6 +921,11 @@ img, img:hover {
 .modal-open .modal {
     background: rgba(0,0,0,0.3);
 }
+
+.modal-content {
+  border-radius:10px;
+}
+
 .lunrsearchresult {
     .title {
         color:#000;
@@ -1104,6 +1121,12 @@ text-transform: uppercase;
       top:15px;
       left:auto;
     }
+    .nav-icon-linkedin {
+      position:absolute;
+      right: 135px;
+      top:15px;
+      left:auto;
+    }
     .nav-icon-plane {
       position:absolute;
       right: 95px;
@@ -1200,4 +1223,22 @@ text-transform: uppercase;
             height:35px;
         }
     }
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.filter-buttons a {
+  font-weight: 600;
+  font-family: 'Campaign';
+  color: #969696;
+  margin: 0px 10px;
+  text-transform: uppercase;
+}
+
+.filter-buttons a.active {
+  color: #3c3c3c;
 }
