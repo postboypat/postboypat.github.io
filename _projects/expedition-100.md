@@ -1,4 +1,5 @@
 ---
+date: 2021-11-01
 layout: project
 title:  "Expedition 100 - Mission to Mars"
 categories: [ Styleframe Design ]
@@ -7,6 +8,8 @@ image: assets/images/expedition-100/5_PG_Expedition100_Boards.jpg
 weight: 7
 color1: 1f0e18
 color2: 7f1c44
+alt_color: 441220
+media_card_text: ffffff
 imageshadow: true
 no_feature_image: true
 ---

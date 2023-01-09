@@ -1,4 +1,5 @@
 ---
+date: 2022-12-01
 layout: project
 title:  "App Demonstration Video"
 categories: [ Motion Design ]
@@ -7,6 +8,8 @@ no_feature_image: true
 weight: 1
 color1: 4c4c4c
 color2: 252525
+alt_color: fdc534
+link_color: fdc534
 imageshadow: true
 ---
 

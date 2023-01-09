@@ -1,4 +1,5 @@
 ---
+date: 2022-07-01
 layout: project
 title:  "Share the Cosy Nights"
 author: sal
@@ -7,6 +8,8 @@ image: assets/images/som-alumni/somalumni_thumb.jpg
 weight: 6
 color1: 122025
 color2: 3d2e3f
+alt_color: 122025
+media_card_text: ffffff
 videothumb: assets/images/som-alumni/SOM_XMAS_2018_8sec2__480p2.mp4
 imageshadow: true
 no_feature_image: true

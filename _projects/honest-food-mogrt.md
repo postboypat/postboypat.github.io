@@ -1,4 +1,5 @@
 ---
+date: 2022-09-01
 layout: project
 title:  "Honest Food - mogrt Templates"
 author: patrick
@@ -8,6 +9,8 @@ videothumb: assets/images/honest-food/hf-thumb-video.mp4
 weight: 3
 color1: 557e66
 color2: 4c6758
+alt_color: 42674d
+media_card_text: ffffff
 imageshadow: true
 no_feature_image: true
 ---

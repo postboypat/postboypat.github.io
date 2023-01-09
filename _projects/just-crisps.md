@@ -1,4 +1,5 @@
 ---
+date: 2021-12-01
 layout: project
 title:  "Just Crisps"
 tags: [ Motion Design ]
@@ -7,6 +8,8 @@ image: assets/images/just-crisps/just-crisps.jpg
 weight: 7
 color1: 743878
 color2: b164b7
+alt_color: 743878
+media_card_text: ffffff
 videothumb: assets/images/just-crisps/JustCrisps_Portfolio_Thumb_1_compressed.mp4
 imageshadow: true
 ---

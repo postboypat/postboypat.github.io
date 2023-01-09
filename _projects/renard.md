@@ -1,4 +1,5 @@
 ---
+date: 2022-08-01
 layout: project
 title:  "Renard Toys and Crafts"
 categories: [ Branding ]
@@ -7,6 +8,8 @@ no_feature_image: false
 weight: 6
 color1: f18831
 color2: b5611b
+alt_color: f18831
+media_card_text: ffffff
 imageshadow: true
 ---
 

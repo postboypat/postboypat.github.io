@@ -1,4 +1,5 @@
 ---
+date: 2022-07-01
 layout: project
 title:  "Sleep Like Sushi"
 author: sal
@@ -7,6 +8,8 @@ image: assets/images/sleeplikesushi/sleeplikesushi_thumb.jpg
 weight: 5
 color1: c597be
 color2: a1a6de
+alt_color: a1a6de
+media_card_text: ffffff
 comments: false
 videothumb: assets/images/sleeplikesushi/Sleep_like_sushi_PortfolioThumb_600_compressed.mp4
 imageshadow: true

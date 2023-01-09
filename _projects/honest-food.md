@@ -1,4 +1,5 @@
 ---
+date: 2022-10-01
 layout: project
 title:  "Honest Food"
 author: sal
@@ -7,6 +8,8 @@ image: assets/images/honest-food/honest_food_thumb.jpg
 weight: 2
 color1: 79415e
 color2: 5a2f46
+alt_color: 723a5c
+media_card_text: ffffff
 imageshadow: true
 no_feature_image: true
 ---

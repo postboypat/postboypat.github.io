@@ -1,39 +1,119 @@
 ---
 layout: default
 title: Home
-image: assets/images/experiments/experiments_thumb1.jpg
+image: assets/images/pg_opengraph_thumb.jpg
 ---
 
-<h1 class="sitetag-large" style="font-weight:900; font-family: campaign; margin-top:50px;">
-  Hi, <a href="/info">I'm Patrick</a>.
-</h1>
-<p class="sitetag">
-  I'm a freelance motion graphic designer based in Bonn, Germany.
-  </p>
-  <p class="sitetag d-none">
-  If you have a project you need some help with, or would just like to connect, I’d be <a href="/info">happy to hear from you</a>.
-</p>
-<br>
+<div class="row frontpage__intro mb-5">
+  <div class="col-md-8 frontpage__intro-bio">
+    <h1 class="sitetag-large" style="font-weight:500; font-family: campaign; font-size: 40px;">
+      Hi, <a href="/info">I'm Patrick</a>.
+    </h1>
+    <p class="sitetag">
+      I'm a freelance motion graphic designer based in Bonn, Germany.
+      </p>
+      <p class="mb-0"><a href="/contact">Let's Connect</a></p>
+  </div>
+  <div class="col-md-4 frontpage-intro--services">
+    <p class="label">My Services</p>
+    <p class="frontpage-intro--services-list">
+      Motion Graphics<br>
+      Explainer Videos<br>
+      Web & Graphic Design<br>
+      Logo Design & Animation<br>
+    </p>
+    <p class="mb-0">
+      <a href="/projects/">View my work</a> <a class="ml-2 d-none" href="#">Let's Connect</a>
+    </p>
+  </div>
+</div>
+
+<!-- Showreel -->
+{% include showreel-modal.html %}
+
+<!-- Featured row 2 -->
+<div class="row mb-5">
+  <div class="col-md-7">
+    <a href="/projects/hugo-ls/">
+    <div class="media-card" style="background-color: #b5bec6;">
+      <div class="media-card__image rounded">
+        <img src="/assets/images/hls/hls_thumb1.jpg" />
+      </div>
+      <div class="media-card__text" style="color: #2d2d2d;">
+        <div class="media-card__text-content">
+        <h5 class="media-card__text-content-title">Language Consultation Service</h5>
+        <p>Motion Design  |  Branding  |  Explainer Video</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>
+  <div class="col-md-5">
+    <a href="/projects/south-london-lads/">
+    <div class="media-card" style="background-color: #164359;">
+      <div class="media-card__image rounded">
+        <img src="/assets/images/sll/sll-thumb2.jpg" />
+      </div>
+      <div class="media-card__text" style="color: white;">
+        <div class="media-card__text-content">
+        <h5 class="media-card__text-content-title">South London Lads</h5>
+        <p>Motion Design  |  Branding</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<!-- Featured row 3 -->
+
+  <div class="col-md-5">
+    <a href="/projects/get-you-customers/">
+    <div class="media-card" style="background-color: #da812d;">
+      <div class="media-card__image rounded">
+        <img src="assets/images/gyc/gyc.jpg" />
+      </div>
+      <div class="media-card__text" style="color: white;">
+        <div class="media-card__text-content">
+        <h5 class="media-card__text-content-title">Get You Customers</h5>
+        <p>Explainer Video  |  Motion Design</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>
+  <div class="col-md-7">
+    <a href="/projects/honest-food/">
+    <div class="media-card" style="background-color: #5a2f46;">
+      <div class="media-card__image rounded">
+        <img src="/assets/images/honest-food/honest_food_thumb.jpg" />
+      </div>
+      <div class="media-card__text" style="color: white;">
+        <div class="media-card__text-content">
+        <h5 class="media-card__text-content-title">Honest Food</h5>
+        <p>Explainer Video  |  Motion Design</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>
+
+</div> <!-- End Row -->
+
+<div class="mx-auto text-center">
+<a href="/projects/" class="button">See More Work</a>
+</div>
+
 <!-- Showreel
 ================================================== -->
-<div class="row">
+<div class="row d-none">
   <div class="col-md-12">
     <div class="embed-responsive embed-responsive-16by9 extended">
       <iframe class="embed-responsive-item image-shadow rounded" src="https://player.vimeo.com/video/724618955" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   </div>
 </div>
-<br>
-<hr />
 
-<!-- Projects index
-================================================== -->
-<div class="project-grid-container">
-  {% assign projects = site.projects | sort: 'weight' %}
-  {% for project in projects %}
-       {% include projectbox.html %}
-  {% endfor %}
-</div>
+
 
 <!-- Posts Index
 ================================================== -->
@@ -50,6 +130,3 @@ image: assets/images/experiments/experiments_thumb1.jpg
     {% include pagination.html %}
 </span>
 </div>
-
-<!-- CTA -->
-{% include cta-contact.html %}

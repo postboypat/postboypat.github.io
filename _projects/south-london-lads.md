@@ -1,4 +1,5 @@
 ---
+date: 2022-04-01
 layout: project
 title:  "South London Lads"
 categories: [ Motion Design, Branding ]
@@ -7,6 +8,8 @@ no_feature_image: true
 weight: 1
 color1: 1781b2
 color2: 155678
+alt_color: 0d3d53
+media_card_text: ffffff
 imageshadow: true
 ---
 

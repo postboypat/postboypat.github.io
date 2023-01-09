@@ -1,0 +1,19 @@
+<!-- begin project -->
+
+<div class="col-md-6 {% for cat in project.categories %}{{ cat | remove:" " | downcase }} {% endfor %}">
+  <a href="{{ site.baseurl }}{{ project.url }}">
+    <div class="media-card" style="background-color: #{{ project.alt_color }};">
+      <div class="media-card__image rounded">
+        <img src="{% if project.image contains "://" %}{{ project.image }}{% else %}{{ site.baseurl }}/{{ project.image }}{% endif %}" alt="{{ project.title }}" />
+      </div>
+      <div class="media-card__text" style="color: #{{ project.media_card_text }};">
+        <div class="media-card__text-content">
+        <h5 class="media-card__text-content-title">{{ project.title }}</h5>
+        <p>{{ project.categories | join: "  |  " }}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- end project -->

@@ -1,4 +1,5 @@
 ---
+date: 2022-12-01
 layout: project
 title:  "Language Consultation Service"
 categories: [ Motion Design, Branding ]
@@ -7,6 +8,7 @@ no_feature_image: true
 weight: 1
 color1: 20336d
 color2: 12274a
+alt_color: bec4ce
 imageshadow: true
 ---
 

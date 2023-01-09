@@ -1,12 +1,15 @@
 ---
+date: 2022-11-01
 layout: project
 title:  "Get You Customers"
-categories: [ Motion Design ]
+categories: [ Explainer Video ]
 image: assets/images/gyc/gyc.jpg
 no_feature_image: true
 weight: 3
 color1: f39536
 color2: f4662a
+alt_color: e68b35
+media_card_text: ffffff
 imageshadow: true
 ---
 

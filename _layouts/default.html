@@ -60,10 +60,10 @@
 <div id="blackover-nav" class="blackover"></div>
 <nav id="menu">
     <ul>
-        <h3>Patrick German</h3>
         <li><a href="{{ site.baseurl }}/">Work</a></li>
 				<!--<li><a href="{{ site.baseurl }}/projects/experiments">Experiments</a></li>-->
         <li><a href="{{ site.baseurl }}/info">Info</a></li>
+				<li><a href="{{ site.baseurl }}/Contact">Contact</a></li>
     </ul>
 </nav>
 <div class="nav-icon-linkedin">
@@ -80,20 +80,24 @@
 <!-- End Sidebar Navigation
 ================================================== -->
 
-{% if page.layout == 'project' %}
-  <div class="utility-bar">
+
+  <div class="utility-bar d-none d-lg-block d-xl-block">
 		<div class="ub-content">
-    	<a href="/"><i class="fas fa-arrow-left" style="margin-right:10px; font-size: 13px;"></i> Back to Projects</a>
+			<div class="desktop-nav justify-content-between">
+				<div class="desktop-nav--back">
+					{% if page.url != '/' %}
+					    	<a href="/"><i class="fas fa-arrow-left" style="margin-right:10px; font-size: 13px;"></i> Back Home</a>
+					{% endif %}
+				</div>
+				<div class="desktop-nav--nav">
+					<a href="/projects/"> Work</a>
+					<a href="/info/"> Info</a>
+					<a class="d-none" href="/"> Play</a>
+					<a class="button" href="/contact/">Contact 👋</a>
+				</div>
+			</div>
 		</div>
   </div>
-{% endif %}
-{% if page.layout == 'page' %}
-  <div class="utility-bar">
-		<div class="ub-content">
-    	<a href="/"><i class="fas fa-arrow-left" style="margin-right:10px; font-size: 13px;"></i> Back Home</a>
-		</div>
-  </div>
-{% endif %}
 
 <div class="site-content {% if page.url == '/' %} firstpage {% endif %}">
 
@@ -129,6 +133,12 @@
     {% endif %}
 
 </div>
+
+<!-- Begin CTA
+================================================== -->
+{% include cta-contact.html %}
+<!-- End CTA
+================================================== -->
 
 <!-- Begin Footer
 ================================================== -->

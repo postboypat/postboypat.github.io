@@ -27,13 +27,16 @@ post_class: post-template
     a:hover {
       color: #{{page. color2 }}
     }
+    .site-content h1>a::before, .site-content h2>a::before, .site-content h3>a::before, .site-content h4>a::before, .site-content h5>a::before, .site-content h6>a::before, .site-content p>a::before {
+      background-color: #{{ page.link_color }};
+    }
 
   </style>
 {% endif %}
 
 <div class="entry-header">
     <!-- Project Category -->
-    <p class="project-categories">{{ page.categories | join: "  •  " }}</p>
+    <p class="label">{{ page.categories | join: "  •  " }}</p>
     <!-- Post Title -->
     <h1 class="posttitle">{{ page.title }}</h1>
 </div>
@@ -62,12 +65,8 @@ post_class: post-template
 {% include share.html %}
 
 <!-- Related Post -->
-{% include related-projects.html %}
+{% include related-projects-mediacard.html %}
 
-<!-- CTA -->
-<hr>
-<br>
-{% include cta-contact.html %}
 
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first:
 https://search.google.com/structured-data/testing-tool/u/0/

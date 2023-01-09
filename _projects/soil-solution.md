@@ -1,4 +1,5 @@
 ---
+date: 2022-08-01
 layout: project
 title:  "A Soil Solution"
 categories: [ Motion Design ]
@@ -6,6 +7,8 @@ image: assets/images/soil-solution/Soil-Solution_Thumb.jpg
 weight: 5
 color1: 402b10
 color2: 4c3612
+alt_color: 0a839a
+media_card_text: ffffff
 comments: false
 imageshadow: true
 no_feature_image: true
