@@ -15,7 +15,7 @@ imageshadow: true
 ---
 Mark, Toby and Matt, (aka the Just Crisps triumvirate), asked me to develop an opening sequence for their new Youtube channel, [Just Crisps](https://www.youtube.com/channel/UCZZNNTWE0ab1QNmLVcysWXw), where they review crisps from all over the world.
 
-The lads were looking for a quick solution to edit animated graphics into each episode, without having to do full renders from After Effects everytime. So we decided to prepare a few motion graphics templates which are simple drag and drop files to be used in Premiere Pro.
+The three lads were looking for a quick solution to edit animated graphics into each episode, without having to do full renders from After Effects everytime. So we decided to prepare a few motion graphics templates which are simple drag and drop files to be used in Premiere Pro.
 
 <div class="my-5">
     <div class="row">
