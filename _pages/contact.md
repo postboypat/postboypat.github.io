@@ -16,7 +16,7 @@ image: assets/images/pg_opengraph_thumb.jpg
 <div class="article-post">
 <p class="label mb-0">Let's connect</p>
 <h1 class="mb-0">Need help with a project?</h1>
-<p class="mt-1">If you have a project you need some help with, or would just like to connect, I'd be happy to hear from you.</p>
+<p class="mt-1">If you have a project you need some help with, or would just like to connect, I'd be happy to hear from you. You can use the form below or contact me directly at <a href="mailto:mrpatrickgerman@gmail.com">mrpatrickgerman@gmail.com</a>.</p>
 
 <form action="https://formspree.io/f/xqkggpwa" method="POST">    
 <div class="form-group row">
