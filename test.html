@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patomotion Pricing Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General styling */
+        body {
+            background-color: #0a1f44;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #00b8ff;
+            margin: 0.5em 0;
+        }
+
+        /* Form styling */
+        #pricingForm {
+            background-color: #122a4f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 525px; /* Increased width by 50% */
+            text-align: center; /* Center-align all content within the form */
+        }
+
+        /* Length Selector Styling */
+        .length-selector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .length-selector button {
+            background-color: #1b375a;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .length-selector button:hover {
+            background-color: #008ac1;
+        }
+
+        .length-display {
+            font-size: 1.2em;
+            margin: 0 10px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /* Style selection section */
+        .style-options {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .style-option {
+            width: 30%;
+            text-align: center;
+        }
+
+        .style-option input[type="radio"] {
+            display: none;
+        }
+
+        .style-option label {
+            display: block;
+            cursor: pointer;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .style-option img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Highlight selected option */
+        .style-option input[type="radio"]:checked + label img {
+            border-color: #00b8ff;
+        }
+
+        button.calculate {
+            width: 100%;
+            padding: 10px;
+            background-color: #00b8ff;
+            color: #ffffff;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: 600;
+        }
+
+        button.calculate:hover {
+            background-color: #008ac1;
+        }
+
+        #priceDisplay {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-align: center;
+            color: #00d1ff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Patomotion Pricing Calculator</h1>
+        <form id="pricingForm">
+            <!-- Length Selection -->
+            <label>How long should your video be?</label>
+            <div class="length-selector">
+                <button type="button" onclick="changeLength(-30)">-</button>
+                <div class="length-display" id="lengthDisplay">2 minutes</div>
+                <button type="button" onclick="changeLength(30)">+</button>
+            </div>
+
+            <!-- Style Selection -->
+            <label>How complex does the animation need to be?</label>
+            <div class="style-options">
+                <div class="style-option">
+                    <input type="radio" id="basic" name="style" value="basic" checked>
+                    <label for="basic">
+                        <img src="https://patrickgerman.com/assets/images/hls/hls_thumb1.jpg" alt="Basic Style">
+                        Basic (-50%)
+                    </label>
+                </div>
+                <div class="style-option">
+                    <input type="radio" id="standard" name="style" value="standard">
+                    <label for="standard">
+                        <img src="https://patrickgerman.com/assets/images/hls/hls_thumb1.jpg" alt="Standard Style">
+                        Standard (no modification)
+                    </label>
+                </div>
+                <div class="style-option">
+                    <input type="radio" id="advanced" name="style" value="advanced">
+                    <label for="advanced">
+                        <img src="https://patrickgerman.com/assets/images/hls/hls_thumb1.jpg" alt="Advanced Style">
+                        Advanced (+50%)
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="calculate" onclick="calculatePrice()">Calculate Price</button>
+        </form>
+
+        <h2 id="priceDisplay">Total Price: $0</h2>
+    </div>
+
+    <script>
+        // Base pricing variables
+        const basePrice = 4000;
+        const incrementCost = 500;
+        const baseMinutes = 2;
+        let currentLength = baseMinutes * 60; // 120 seconds for 2 minutes
+
+        // Update display length
+        function updateLengthDisplay() {
+            const minutes = Math.floor(currentLength / 60);
+            const seconds = currentLength % 60;
+            document.getElementById("lengthDisplay").innerText = `${minutes} min ${seconds > 0 ? seconds + " sec" : ""}`;
+        }
+
+        // Change length in increments of 30 seconds
+        function changeLength(increment) {
+            currentLength = Math.max(120, currentLength + increment); // Prevent going below 2 minutes
+            updateLengthDisplay();
+        }
+
+        // Calculate price function
+        function calculatePrice() {
+            // Get style
+            const style = document.querySelector('input[name="style"]:checked').value;
+
+            // Calculate length-based price modification
+            const extraMinutes = (currentLength - (baseMinutes * 60)) / 30;
+            const lengthPrice = basePrice + (extraMinutes * incrementCost);
+
+            // Calculate style-based price modification
+            let finalPrice;
+            if (style === "basic") {
+                finalPrice = lengthPrice * 0.5;
+            } else if (style === "standard") {
+                finalPrice = lengthPrice;
+            } else if (style === "advanced") {
+                finalPrice = lengthPrice * 1.5;
+            }
+
+            // Display the price
+            document.getElementById("priceDisplay").innerText = `Total Price: $${finalPrice.toFixed(2)}`;
+        }
+
+        // Initialize display on load
+        updateLengthDisplay();
+    </script>
+</body>
+</html>
